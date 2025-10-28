@@ -29,7 +29,6 @@ These checks help ensure your analog IC design works reliably in any situation.
   - [3.1 Common Source Amplifier using NMOS](#31-common-source-amplifier-using-NMOS)
     - [3.1.1 Common Source Amplifier using Resistve load](#311-common-source-amplifier-using-resistive-load)
   - [3.2 Common Drain Amplifier using NMOS](#33-common-drain-amplifier-using-NMOS)
-
   - [3.3 Common Gate Amplifier using NMOS](#35-common-gate-amplifier-using-NMOS)
  
 
