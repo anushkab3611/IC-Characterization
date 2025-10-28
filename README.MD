@@ -61,7 +61,7 @@ The AC analysis for the common source amplifier reveals the following key points
 
 - The midband gain of the amplifier is approximately 13 dB.
 - At the -3 dB bandwidth (the -3 dB frequency, or S<sub>p</sub>), the gain drops to 10 dB, indicating the cutoff point for the amplifier’s frequency response. Beyond this frequency, the gain slope decreases at a rate of 20 dB per decade.
-- In the phase plot, the phase shift at the -3 dB point (S<sub>p</sub> = 2 MHz) drops to -45°, which is characteristic of a single-pole amplifier.
+- In the phase plot, the phase shift at the -3 dB point (S<sub>p</sub> = 2 MHz) drops to -46.36°, which is characteristic of a single-pole amplifier.
 - If the frequency is increased tenfold above the SP (i.e., at 20 MHz), the phase decreases by approximately 81.91° from its midband value.
 - Conversely, at one-tenth the SP frequency (0.2 MHz), the phase shift is much smaller, about 5.97°.
 
