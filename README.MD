@@ -56,6 +56,7 @@ These checks help ensure your analog IC design works reliably in any situation.
 
 **AC Simulation Output**  
 <img src="simulation%20results/ngspice/4.jpg" width="600" />
+
 The AC analysis for the common source amplifier reveals the following key points:
 
 - The midband gain of the amplifier is approximately 13 dB.
