@@ -39,3 +39,8 @@ These checks help ensure your analog IC design works reliably in any situation.
 - A **resistor** is a passive electrical component that resists the flow of electric current, producing a voltage drop across its terminals according to **Ohm's Law**:   `` V = I * R ``
 - The resistance R of a material depends on its physical properties and geometry, given by the formula: `` R = ρL / A ``
 - In the **Skywater SKY130 PDK**, multiple resistor types are available for analog and digital IC design, offering different resistance values, temperature characteristics, and area trade-offs.
+
+#3. Single Stage Amplifiers
+
+##3.1 Common Source Amplifier using NMOS
+###3.1.1 Common Source Amplifier using Resistve load
