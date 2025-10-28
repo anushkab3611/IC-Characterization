@@ -1,5 +1,6 @@
 # IC-Characterization
-This GitHub repository is created to provide hands-on experience in Analog IC Characterization using open-source tools such as **NGSpice**, **Xschem**, and the **SKY130 PDK**.
+This repository provides practical experience in Analog IC characterization using open-source tools like **NGSpice**, **Xschem**, and the **SKY130 PDK**. It includes examples, simulations, and steps for designing and analyzing analog circuits.
+
 ## What is Analog IC Characterization ?
 Analog IC characterization means testing and analyzing analog circuits to see how they perform under different real-world conditions. The process measures important parameters like gain, bandwidth, offset, and noise, making sure the circuit works correctly before and after fabrication. Characterization is usually done using simulation tools (such as Ngspice or Xschem) and focuses on three main “corners”:
 
