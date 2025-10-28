@@ -43,16 +43,17 @@ These checks help ensure your analog IC design works reliably in any situation.
 # 3. Single Stage Amplifiers
 
 ## 3.1 Common Source Amplifier using NMOS
-### 3.1.1 Common Source Amplifier using Resistve load
 
+### 3.1.1 Common Source Amplifier using Resistive load
 
-<img src="simulation%20results/ngspice/1.png" width="600"/> 
+<img src="simulation%20results/ngspice/1.png" width="600" />
 
-DC Simulation Output
-<img src="simulation%20results/ngspice/2.png" width="600" height="300"/>
+**DC Simulation Output**  
+<img src="simulation%20results/ngspice/2.png" width="600" height="300" />
 
-Transient Simulation Output
-<img src="simulation%20results/ngspice/3.png" width="600" height="300"/>
+**Transient Simulation Output**  
+<img src="simulation%20results/ngspice/3.png" width="600" height="300" />
 
-AC Simulation Output
-<img src="simulation%20results/ngspice/4.png" width="600" height="500"/>
+**AC Simulation Output**  
+<img src="simulation%20results/ngspice/4.png" width="600" height="500" />
+
