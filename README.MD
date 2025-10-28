@@ -44,11 +44,11 @@ These checks help ensure your analog IC design works reliably in any situation.
 
 The DC analysis for the common source amplifier
 
-- When $$V_{GS} < V_T $$, the MOSFET is in the **cutoff region**; it acts like an open switch, so no current flows and the output voltage ($$ V_{out} $$) remains at the supply voltage ($$V_{DD} $$).
+- When $$V_{GS} < V_T $$, the MOSFET is in the **cutoff region**; it acts like an open switch, so no current flows and the output voltage ($$V_{out} $$) remains at the supply voltage ($$V_{DD} $$).
 - As $$V_{GS} $$ increases past $$ V_T $$, the MOSFET turns on and enters the **saturation region**. Now current starts to flow, the output voltage starts dropping across the drain resistor, and the MOSFET behaves like an active device with stable amplification.
-- Whenever $$ V_{DS} > V_{GS} - V_T $$, the transistor stays in saturation: drain current mainly depends on gate voltage.
-- Eventually, if $$ V_{GS} $$ continues to increase and $$ V_{DS} < V_{GS} - V_T $$, the MOSFET enters the **linear (triode) region**; it acts like a voltage-controlled resistor and $$ V_{out} $$ drops further.
-- These regions are visible in the DC sweep plot: first as a flat line at high $$ V_{out} $$ (cutoff), then a sharp drop (saturation), then a gentle downward slope (linear).
+- Whenever $$V_{DS} > V_{GS} - V_T $$, the transistor stays in saturation: drain current mainly depends on gate voltage.
+- Eventually, if $$ V_{GS} $$ continues to increase and $$V_{DS} < V_{GS} - V_T $$, the MOSFET enters the **linear (triode) region**; it acts like a voltage-controlled resistor and $$ V_{out} $$ drops further.
+- These regions are visible in the DC sweep plot: first as a flat line at high $$V_{out} $$ (cutoff), then a sharp drop (saturation), then a gentle downward slope (linear).
 
 **Transient Simulation Output**  
 <img src="simulation%20results/ngspice/3.png" width="600" height="400" />
