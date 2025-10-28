@@ -55,5 +55,5 @@ These checks help ensure your analog IC design works reliably in any situation.
 <img src="simulation%20results/ngspice/3.png" width="600" height="400" />
 
 **AC Simulation Output**  
-<img src="simulation%20results/ngspice/4.png" width="600" height="500" />
+<img src="simulation%20results/ngspice/5.png" width="600" height="400" />
 
