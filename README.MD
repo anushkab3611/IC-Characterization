@@ -47,3 +47,12 @@ These checks help ensure your analog IC design works reliably in any situation.
 
 
 <img src="simulation%20results/ngspice/1.png" width="600"/> 
+
+DC Simulation Output
+<img src="simulation%20results/ngspice/2.png" width="600"/>
+
+Transient Simulation Output
+<img src="simulation%20results/ngspice/3.png" width="600"/>
+
+AC Simulation Output
+<img src="simulation%20results/ngspice/4.png" width="600"/>
