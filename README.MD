@@ -44,3 +44,6 @@ These checks help ensure your analog IC design works reliably in any situation.
 
 ## 3.1 Common Source Amplifier using NMOS
 ### 3.1.1 Common Source Amplifier using Resistve load
+
+
+<img src="simulation%20results/ngspice/1.png" width="600"/> 
