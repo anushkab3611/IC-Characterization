@@ -16,12 +16,7 @@ These checks help ensure your analog IC design works reliably in any situation.
 - [1. Linear Elements](#1-linear-elements)
   - [1.1 Resistors](#11-resistors)
   - [1.2 Capacitors](#12-capacitors)
-  - [1.3 RC Circuits](#13-rc-circuits)
-     - [1.3.1 Transient Analysis](#131-transient-analysis)
-     - [1.3.2 AC Analysis](#132-ac-analysis)
-  - [1.4 CR Circuits](#14-cr-circuits)
-     - [1.4.1 Transient Analysis](#141-transient-analysis)
-     - [1.4.2 AC Analysis](#142-ac-analysis)
+  - [1.3 RC Circuits](#13-rc-circuits)     
 - [2. MOSFET Circuits](#2-mosfet-circuits)
   - [2.1 NMOS Analysis](#21-nmos-analysis)
   - [2.2 PMOS Analysis](#22-pmos-analysis)
@@ -36,10 +31,6 @@ These checks help ensure your analog IC design works reliably in any situation.
 
 ## 1.1 Resistors
 
-- A **resistor** is a passive electrical component that resists the flow of electric current, producing a voltage drop across its terminals according to **Ohm's Law**:   `` V = I * R ``
-- The resistance R of a material depends on its physical properties and geometry, given by the formula: `` R = ρL / A ``
-- In the **Skywater SKY130 PDK**, multiple resistor types are available for analog and digital IC design, offering different resistance values, temperature characteristics, and area trade-offs.
-
 # 3. Single Stage Amplifiers
 
 ## 3.1 Common Source Amplifier using NMOS
@@ -50,6 +41,14 @@ These checks help ensure your analog IC design works reliably in any situation.
 
 **DC Simulation Output**  
 <img src="simulation%20results/ngspice/2.png" width="600" height="400" />
+
+The DC analysis for the common source amplifier
+
+- When $$V_{GS} < V_T $$, the MOSFET is in the **cutoff region**; it acts like an open switch, so no current flows and the output voltage ($$ V_{out} $$) remains at the supply voltage ($$ V_{DD} $$).
+- As $$ V_{GS} $$ increases past $$ V_T $$, the MOSFET turns on and enters the **saturation region**. Now current starts to flow, the output voltage starts dropping across the drain resistor, and the MOSFET behaves like an active device with stable amplification.
+- Whenever $$ V_{DS} > V_{GS} - V_T $$, the transistor stays in saturation: drain current mainly depends on gate voltage.
+- Eventually, if $$ V_{GS} $$ continues to increase and $$ V_{DS} < V_{GS} - V_T $$, the MOSFET enters the **linear (triode) region**; it acts like a voltage-controlled resistor and $$ V_{out} $$ drops further.
+- These regions are visible in the DC sweep plot: first as a flat line at high $$ V_{out} $$ (cutoff), then a sharp drop (saturation), then a gentle downward slope (linear).
 
 **Transient Simulation Output**  
 <img src="simulation%20results/ngspice/3.png" width="600" height="400" />
